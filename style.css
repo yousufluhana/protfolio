@@ -1,0 +1,315 @@
+/* General Styles */
+
+:root {
+  --primary-color: #4a4a4a;
+  --secondery-color: #f0f0f0;
+  --text-color: #333;
+  --accent-color: #ffd700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondery-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* common css code started */
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  padding: 0.75rem 1rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6c200;
+}
+
+#top {
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0.3rem;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* common css code ended*/
+
+/* header style started */
+header {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondery-color);
+  padding: 0.75rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: var(--secondery-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondery-color);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* header style ended */
+
+/* hero style ended */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./image/Web Development.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+/* hero style ended */
+
+/* about style started */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-image img {
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+
+.about-text {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+/* about style ended */
+
+/* skills style started */
+.skill-item {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.4rem;
+  width: 160px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* skills style ended */
+
+/* projects style started */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 500px;
+  width: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+}
+
+.todo-img {
+  background-image: url("./image/todo.png");
+}
+.weather-img {
+  background-image: url("./image/weather-app-icons.jpg");
+}
+.blog-img {
+  background-image: url("./image/six-two-blog.png");
+}
+.landing-img {
+  background-image: url("./image/landing.jpg");
+}
+.gallery-img {
+  background-image: url("./image/gallery.jpg");
+}
+.quiz-img {
+  background-image: url("./image/quiz.jpg");
+}
+
+.project-description {
+  padding: 0.2rem;
+}
+
+.project-content {
+  padding: 0.8rem;
+  text-align: justify;
+}
+
+.project-content a {
+  margin-left: 20px;
+}
+
+/* project style ended */
+
+/* contact style started */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+/* contact style ended */
+
+/* footer style started */
+footer {
+  text-align: center;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  color: var(--secondery-color);
+  margin-top: 0.2rem;
+}
+/* footer style ended */
+
+/* responsive design started */
+@media screen and (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+  }
+  .about-content > * {
+    flex: 1;
+  }
+  .about-image {
+    text-align: center;
+  }
+  .about-image img {
+    height: 400px;
+  }
+
+  .project-card {
+    height: 530px;
+    width: calc(50% - 20px);
+    /* flex-grow: 1; */
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .project-card {
+    height: 550px;
+    width: calc(33.33% - 20px);
+  }
+}
