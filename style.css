@@ -11,13 +11,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--secondery-color);
   color: var(--text-color);
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 /* common css code started */
